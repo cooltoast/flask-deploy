@@ -11,9 +11,21 @@ def index():
 def about():
     return render_template('about.html')
 
+@app.route('/contact/')
+def contact():
+    return render_template('contact.html')
+
 @app.route('/method/')
 def method():
     return render_template('method.html')
+
+@app.route('/tennis/')
+def tennis():
+    return render_template('tennis.html')
+
+@app.route('/history/')
+def history():
+    return render_template('history.html')
 
 @app.route('/hello/')
 @app.route('/hello/<name>')

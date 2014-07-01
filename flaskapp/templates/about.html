@@ -10,7 +10,7 @@
     <meta name="google-site-verification" content="MYX40_aIbgehzsMdcFg0mIka5EVGT0I7CUViHrqf5Rc" />
     
     <!-- [template css] begin -->
-	<link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/screen.css') }}" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/screen.css') }}" type="text/css" media="screen, projection" />
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/960.css') }}" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/print.css') }}" type="text/css" media="print" /> 
     <!--[if IE]>
@@ -23,11 +23,11 @@
     <!-- [template css javascript] end -->
 	
 	<!-- [JS] begin -->
-    <script  type="text/javascript" src="js/jquery-1.3.1.min.js"></script> 
-    <script  type="text/javascript" src="js/scripts.js"></script>
-    <script  type="text/javascript" src="js/coda-slider.1.1.1.js"></script>
-    <script  type="text/javascript" src="js/jquery-easing-compatibility.1.2.pack.js"></script>
-    <script  type="text/javascript" src="js/jquery-easing.1.2.pack.js"></script>
+    <script  type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.3.1.min.js') }}"></script> 
+    <script  type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    <script  type="text/javascript" src="{{ url_for('static', filename='js/coda-slider.1.1.1.js') }}"></script>
+    <script  type="text/javascript" src="{{ url_for('static', filename='js/jquery-easing-compatibility.1.2.pack.js') }}"></script>
+    <script  type="text/javascript" src="{{ url_for('static', filename='js/jquery-easing.1.2.pack.js') }}"></script>
     <!-- [JS] end -->
   
 </head>
@@ -38,7 +38,7 @@
 	
 		<!-- START LOGO -->
 		<div class="grid_3 header">
-			<a href="index.html"><img src="images/logo.png" alt="Right4Left" /></a>
+			<a href="/"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Right4Left" /></a>
 		</div>
 		<!-- END LOGO -->
    	 
@@ -66,7 +66,7 @@
    
 		<!-- START SERVE PIC -->
 		<div class="grid_4">
-			<img src="images/mascotte.png" alt="" class="mascotte"/>
+			<img src="{{ url_for('static', filename='images/mascotte.png') }}" alt="" class="mascotte"/>
 			<br>Image from <a href="http://www.eyecandysigns.net">Eye Candy Signs</a>	
 		</div>
 		<!-- END SERVE PIC -->	
